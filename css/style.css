@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #2b2a27;
+  font-size: 1rem;
+  font-family: "Meiryo";
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.page-title {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+
+.content-title {
+  font-size: 1.25rem;
+  margin: 40px 0 15px;
+  padding-bottom: 5px;
+  border-bottom: solid 1px #ccc;
+}
+
+/* コンテンツ　 */
+
+.content {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.content .img {
+  width: 50%;
+}
+
+.content .img img {
+  height: 700px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.content .text {
+  width: 50%;
+  padding: 40px 5% 0;
+}
+
+.content .text dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content .text dt {
+  width: 85%;
+  padding: 6px 0;
+  border-bottom: dotted 1px #ccc;
+}
+
+.content .text dd {
+  width: 15%;
+  padding: 6px 0;
+  border-bottom: dotted 1px #ccc;
+  text-align: right;
+}
+
+.content .text ol li {
+  margin-left: 20px;
+  padding: 6px 0;
+  border-bottom: dotted 1px #ccc;
+}
+
+/* ボタン */
+
+.btn {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.btn a {
+  border: solid 1px #2b2a27;
+  padding: 18px 60px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+/* フッター */
+
+#footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.75rem;
+}
+
+#footer .sns {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+#footer .sns li {
+  margin: 0 10px;
+}
+
+/* レスポンシブ */
+
+@media screen and (max-width: 834px) {
+  .content {
+    flex-direction: column;
+  }
+  .content .img {
+    width: 100%;
+  }
+  .content .img img {
+    height: auto;
+  }
+  .content .text {
+    width: 100%;
+  }
+}
